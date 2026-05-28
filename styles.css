@@ -935,12 +935,13 @@ section {
 
 .strains-scroll {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2.5rem;
-  overflow-x: auto;
   padding: 0 2rem 1rem;
-  scrollbar-width: thin;
-  scrollbar-color: #2D5A2D transparent;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .strain-card {
@@ -1388,6 +1389,7 @@ footer {
     overflow-x: visible;
     padding: 0;
     gap: 0.85rem;
+    max-width: 100%;
   }
   .strain-card { width: 100%; }
 
